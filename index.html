@@ -47,23 +47,28 @@
         >
         </a-entity>
       </a-marker>
-      <a-marker
-              url="markers/fmarker.patt"
+
+      <a-nft
+              type="nft"
+              url="markers/fmarker.png"
+              smooth="true"
+              smoothCount="10"
+              smoothTolerance=".01"
+              smoothThreshold="5"
               raycaster="objects: .clickable"
               emitevents="true"
               cursor="fuse: false; rayOrigin: mouse;"
-              id="markerA"
       >
         <a-entity
                 id="bowser-model"
                 gltf-model="obj/busya/scene.gltf"
                 position="0 0 0"
-                scale="0.5 0.5 0.5"
+                scale="0.5 0.05 0.5"
                 class="clickable"
                 gesture-handler
         >
         </a-entity>
-      </a-marker>
+      </a-nft>
       <a-entity camera></a-entity>
     </a-scene>
   </body>
