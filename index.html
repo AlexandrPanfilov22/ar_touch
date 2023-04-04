@@ -41,5 +41,33 @@
       </a-marker>
       <a-entity camera></a-entity>
     </a-scene>
+
+    <a-scene
+            arjs
+            embedded
+            renderer="logarithmicDepthBuffer: true;"
+            vr-mode-ui="enabled: false"
+            gesture-detector
+            id="scene"
+    >
+      <a-marker
+              preset="kanji"
+              raycaster="objects: .clickable"
+              emitevents="true"
+              cursor="fuse: false; rayOrigin: mouse;"
+              id="markerB"
+      >
+        <a-entity
+                id="bowser-model"
+                gltf-model="obj/busya/scene.gltf"
+                position="0 0 0"
+                scale="0.5 0.5 0.5"
+                class="clickable"
+                gesture-handler
+        >
+        </a-entity>
+      </a-marker>
+      <a-entity camera></a-entity>
+    </a-scene>
   </body>
 </html>
