@@ -15,32 +15,35 @@
   </head>
 
   <body>
-    <a-scene
-            arjs
-            embedded
-            renderer="logarithmicDepthBuffer: true;"
-            vr-mode-ui="enabled: false"
-            gesture-detector
-            id="scene"
+  <a-scene
+          arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;"
+          embedded
+          renderer="logarithmicDepthBuffer: true;"
+          vr-mode-ui="enabled: false"
+          gesture-detector
+          id="scene"
+  >
+    <a-nft
+            type="nft"
+            url="markers/mf"
+            smooth="true"
+            smoothCount="10"
+            smoothTolerance=".01"
+            smoothThreshold="5"
+            raycaster="objects: .clickable"
+            emitevents="true"
+            cursor="fuse: false; rayOrigin: mouse;"
     >
-      <a-marker
-              preset="kanji"
-              raycaster="objects: .clickable"
-              emitevents="true"
-              cursor="fuse: false; rayOrigin: mouse;"
-              id="markerB"
+      <a-entity
+              gltf-model="obj/busya/scene/gltf"
+              scale="0.5 0.5 0.5"
+              position="0 0 0"
+              class="clickable"
+              gesture-handler
       >
-        <a-entity
-                id="bowser-model"
-                gltf-model="obj/busya/scene.gltf"
-                position="0 0 0"
-                scale="0.5 0.5 0.5"
-                class="clickable"
-                gesture-handler
-        >
-        </a-entity>
-      </a-marker>
-      <a-entity camera></a-entity>
-    </a-scene>
+      </a-entity>
+    </a-nft>
+    <a-entity camera></a-entity>
+  </a-scene>
   </body>
 </html>
