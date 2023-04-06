@@ -24,14 +24,10 @@
         gesture-detector
         id="scene"
 >
-    <a-assets>
-        <img id="marker1" src="marker1.jpg">
-        <img id="marker2" src="marker2.jpg">
-    </a-assets>
-
-    <a-marker src="#marker1" width="1" height="1" position="0 0 0" raycaster="objects: .clickable"
-             emitevents="true"
-             cursor="fuse: false; rayOrigin: mouse;">
+    <a-marker preset="custom" type="pattern" url="markers/pattern-marker1.patt" raycaster="objects: .clickable"
+              emitevents="true"
+              cursor="fuse: false; rayOrigin: mouse;"
+              marker-controls>
         <a-entity
                 id="bowser-model"
                 gltf-model="obj/ice-cream/scene.gltf"
@@ -43,18 +39,19 @@
         </a-entity>
     </a-marker>
 
-    <a-marker src="#marker2" width="1" height="1" position="0 0 0" raycaster="objects: .clickable"
-             emitevents="true"
-             cursor="fuse: false; rayOrigin: mouse;">
-      <a-entity
-              id="bowser-model"
-              gltf-model="obj/busya/scene.gltf"
-              position="0 0 0"
-              scale="0.05 0.05 0.05"
-              class="clickable"
-              gesture-handler
-      >
-      </a-entity>
+    <a-marker preset="custom" type="pattern" url="markers/pattern-marker2.patt" raycaster="objects: .clickable"
+              emitevents="true"
+              cursor="fuse: false; rayOrigin: mouse;"
+              marker-controls>
+        <a-entity
+                id="bowser-model"
+                gltf-model="obj/busya/scene.gltf"
+                position="0 0 0"
+                scale="0.05 0.05 0.05"
+                class="clickable"
+                gesture-handler
+        >
+        </a-entity>
     </a-marker>
     <a-entity camera></a-entity>
 </a-scene>
