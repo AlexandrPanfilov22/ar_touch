@@ -25,11 +25,11 @@
         id="scene"
 >
     <a-assets>
-        <img id="marker1" src="marker1.png">
-        <img id="marker2" src="marker2.png">
+        <img id="marker1" src="marker1.jpg">
+        <img id="marker2" src="marker2.jpg">
     </a-assets>
 
-    <a-image src="#marker1" width="1" height="1" position="0 0 0" raycaster="objects: .clickable"
+    <a-marker src="#marker1" width="1" height="1" position="0 0 0" raycaster="objects: .clickable"
              emitevents="true"
              cursor="fuse: false; rayOrigin: mouse;">
         <a-entity
@@ -41,9 +41,9 @@
                 gesture-handler
         >
         </a-entity>
-    </a-image>
+    </a-marker>
 
-    <a-image src="#marker2" width="1" height="1" position="0 0 0" raycaster="objects: .clickable"
+    <a-marker src="#marker2" width="1" height="1" position="0 0 0" raycaster="objects: .clickable"
              emitevents="true"
              cursor="fuse: false; rayOrigin: mouse;">
       <a-entity
@@ -55,7 +55,7 @@
               gesture-handler
       >
       </a-entity>
-    </a-image>
+    </a-marker>
     <a-entity camera></a-entity>
 </a-scene>
 </body>
