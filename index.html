@@ -9,27 +9,46 @@
 
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
-    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@argonjs/argon@2/dist/argon.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/ar.js@2.0.8"></script>
     <script src="gesture-detector.js"></script>
     <script src="gesture-handler.js"></script>
 </head>
 
 <body>
-<body>
-<script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
-<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.7.2/aframe/build/aframe-ar.js"></script>
 
-<a-scene embedded arjs="sourceType: webcam;">
-    <a-marker preset="custom" type="pattern" url="markers/pattern-marker1.patt">
-        <a-box position='0 0.5 0' material='color: red;' scale='0.5 0.5 0.5'></a-box>
+<a-scene
+        arjs
+        embedded
+        renderer="logarithmicDepthBuffer: true;"
+        vr-mode-ui="enabled: false"
+        gesture-detector
+        id="scene"
+>
+    <a-marker-camera preset="custom" type="pattern" url="markers/pattern-marker1.jpg">
+        <a-entity
+                id="bowser-model"
+                gltf-model="obj/ice-cream/scene.gltf"
+                position="0 0 0"
+                scale="0.05 0.05 0.05"
+                class="clickable"
+                gesture-handler
+        >
+        </a-entity>
+    </a-marker-camera>
+
+    <a-marker preset="custom" type="pattern" url="markers/pattern-marker2.patt" raycaster="objects: .clickable"
+              emitevents="true"
+              cursor="fuse: false; rayOrigin: mouse;"
+              marker-controls>
+        <a-entity
+                id="bowser-model"
+                gltf-model="obj/busya/scene.gltf"
+                position="0 0 0"
+                scale="0.05 0.05 0.05"
+                class="clickable"
+                gesture-handler
+        >
+        </a-entity>
     </a-marker>
-
-    <a-marker preset="custom" type="pattern" url="markers/pattern-marker2.patt">
-        <a-sphere position='0 0.5 0' material='color: green;' radius='0.5'></a-sphere>
-    </a-marker>
-
     <a-entity camera></a-entity>
 </a-scene>
 </body>
