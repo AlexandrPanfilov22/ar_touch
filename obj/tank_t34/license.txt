@@ -1,0 +1,11 @@
+Model Information:
+* title:	Soviet T-34/85 medium tank
+* source:	https://sketchfab.com/3d-models/soviet-t-3485-medium-tank-626f280cddf04ff6bb75a586b07d518f
+* author:	Basic Hsu (https://sketchfab.com/Hsu.Pei.Ge)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Soviet T-34/85 medium tank" (https://sketchfab.com/3d-models/soviet-t-3485-medium-tank-626f280cddf04ff6bb75a586b07d518f) by Basic Hsu (https://sketchfab.com/Hsu.Pei.Ge) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
