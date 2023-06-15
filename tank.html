@@ -2,16 +2,16 @@
 
 <html>
 <head>
-  <title>Gesture Interactions - A-Frame & AR.js</title>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="stylesheet" href="styles.css">
+    <title>Gesture Interactions - A-Frame & AR.js</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="styles.css">
 
-  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
-  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
-  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
-  <script src="gesture-detector.js"></script>
-  <script src="gesture-handler.js"></script>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+    <script src="gesture-detector.js"></script>
+    <script src="gesture-handler.js"></script>
 </head>
 
 <body>
@@ -23,24 +23,42 @@
         gesture-detector
         id="scene"
 >
-  <a-marker
-          preset="hiro"
-          raycaster="objects: .clickable"
-          emitevents="true"
-          cursor="fuse: false; rayOrigin: mouse;"
-          id="markerA"
-  >
-    <a-entity
-            id="bowser-model"
-            gltf-model="obj/tank_wwii/scene.gltf"
-            position="0 0 0"
-            scale="0.01 0.01 0.01"
-            class="clickable"
-            gesture-handler
+    <a-marker
+            preset="hiro"
+            raycaster="objects: .clickable"
+            emitevents="true"
+            cursor="fuse: false; rayOrigin: mouse;"
+            id="markerA"
     >
-    </a-entity>
-  </a-marker>
-  <a-entity camera></a-entity>
+        <a-entity
+                id="bowser-model"
+                gltf-model="obj/tank_wwii/scene.gltf"
+                position="0 0 0"
+                scale="0.01 0.01 0.01"
+                class="clickable"
+                gesture-handler
+        >
+        </a-entity>
+    </a-marker>
+
+    <a-marker
+            preset="kanji"
+            raycaster="objects: .clickable"
+            emitevents="true"
+            cursor="fuse: false; rayOrigin: mouse;"
+            id="markerA"
+    >
+        <a-entity
+                id="bowser-model"
+                gltf-model="obj/busya/scene.gltf"
+                position="0 0 0"
+                scale="0.5 0.5 0.5"
+                class="clickable"
+                gesture-handler
+        >
+        </a-entity>
+    </a-marker>
+    <a-entity camera></a-entity>
 </a-scene>
 </body>
 </html>
