@@ -1,0 +1,11 @@
+Model Information:
+* title:	Mosin Nagant
+* source:	https://sketchfab.com/3d-models/mosin-nagant-2fd8a7efd9254b8b81b06934b7782954
+* author:	TN_Nomad (https://sketchfab.com/TN_Nomad)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Mosin Nagant" (https://sketchfab.com/3d-models/mosin-nagant-2fd8a7efd9254b8b81b06934b7782954) by TN_Nomad (https://sketchfab.com/TN_Nomad) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
