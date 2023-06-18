@@ -1,0 +1,11 @@
+Model Information:
+* title:	PPSH 41
+* source:	https://sketchfab.com/3d-models/ppsh-41-d3f7af13bec64e899b6a24ae5bf73b90
+* author:	Foxx Assets (https://sketchfab.com/FoxxAssets)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "PPSH 41" (https://sketchfab.com/3d-models/ppsh-41-d3f7af13bec64e899b6a24ae5bf73b90) by Foxx Assets (https://sketchfab.com/FoxxAssets) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
